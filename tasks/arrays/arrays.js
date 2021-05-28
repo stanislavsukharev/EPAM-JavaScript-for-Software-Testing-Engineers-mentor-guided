@@ -29,7 +29,7 @@ function getNonHumanCharacters(chars) {}
 function getJerryInfo(chars) {}
 
 /**
- * check if all characters are human. return true if all, false if not
+ * check if all characters are human (species attribute). return true if all, false if not
  * Avoid using forEach() method
  * @param {Array} chars
  * @return {boolean}
@@ -37,7 +37,7 @@ function getJerryInfo(chars) {}
 function isAllHuman(chars) {}
 
 /**
- * check if there are any Fish-Person characters. return true if any, false if not
+ * check if there are any 'type == Fish-Person' characters. return true if any, false if not
  * Avoid using forEach() method
  * @param {Array} chars
  * @return {boolean}
