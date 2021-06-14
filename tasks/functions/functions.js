@@ -7,8 +7,7 @@ function sum(a, b) {
 }
 
 /**
- * write function that return first and last name of a given object
- * properties are firstName and lastName
+ * write function that returns firstName and lastName of a given object
  * {
  *    firstName: "John"
  *    lastName: "Dou"
@@ -27,8 +26,9 @@ function isOdd(n) {
 }
 
 /**
- * write function that return shortest of words in the given array
- * e.g ["one", "two", "three"] should return one
+ * write function that returns shortest of the words in the given array
+ * @example
+ * console.log(getShortest(["one", "two", "three"])) // one
  */
 function getShortest(wordArray) {
 
@@ -36,7 +36,8 @@ function getShortest(wordArray) {
 
 /**
  * write function that returns word google with given numbers of "o" symbols
- * e.g getGoogle(5) should return "gooooogle"
+ * @example
+ * console.log(getGoogle(5)) // gooooogle
  */
 function getGoogle(n) {
 
@@ -44,7 +45,7 @@ function getGoogle(n) {
 
 /**
  * write function that returns object based on the given information 
- * (params may be null, so, please use default params)
+ * (params may be null, so, please use default ones)
  * getUser("John", "Dou", 42) should return
  * {
  *    firstName: "John"
@@ -71,9 +72,10 @@ function getTotalPath(path) {
  * and the percentage (hint: you need to use the Closure here)
  * @param {percentage} num
  * @param {amount} num
- * e.g const discount10 = discountFunction(10);
- * discount10(90) should return 81
- * discount10(100) should return 90
+ * @example
+ * const discount10 = discountFunction(10);
+ * console.log(discount10(90)); // 81
+ * console.log(discount10(100)); // 90
  */
 
 function discountFunction(percentage) {

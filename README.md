@@ -10,9 +10,9 @@
 [Module 4: JavaScript functions](#module_4)  
 [Module 5: Strings and arrays](#module_5)  
 [Module 6: Objects, classes, and OOP](#module_6)  
-[Module 7: Async programming](#module_7)  
-[Module 8: NodeJS infrastructure](#module_8)  
-[Contact list](#contacts) 
+[Module 7: Async programming](#module_7)
+[Module 8: NodeJS infrastructure](#module_8)
+[Contact list](#contacts)
 [License](#license) 
 
 <a name="description"/>

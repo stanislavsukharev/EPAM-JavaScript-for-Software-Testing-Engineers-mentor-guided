@@ -18,7 +18,7 @@ const y = 7;
 /** TODO
  * The system receives 3 params - alpha, beta, operator.
  * Operator can pass 4 possible values - "add", "subtract", "multiply", "divide".
- * Implement the logic when the system does appropriate operation based on passed operator param.
+ * Implement the logic when the system does appropriate operation based on the passed operator param.
  * Assign result to task2 variable
  */
 let task2;
@@ -33,13 +33,13 @@ const operator = "add";
 /**
  * TODO
  * Write the logic that will calculate the amount of discount
- * considering the redemption amount
+ * considering the 'redemption' amount
  * Rules are the following:
  * - 0    - 350:  0
  * - 351  - 1350: 15
  * - 1351 - 2700: 30
  * - 2701 - 6500: 45
- * assign result to discount variable
+ * assign the result to the 'discount' variable
  */
 const redemption = 420;
 let discount;

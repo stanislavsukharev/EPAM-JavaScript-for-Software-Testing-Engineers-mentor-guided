@@ -1,7 +1,7 @@
 {
   "name": "js-mentoring-program",
-  "version": "1.5.0",
-  "description": "Repository for learning tasks",
+  "version": "1.6.0",
+  "description": "JavaScript Mentoring Program",
   "scripts": {
     "test:intro": "mocha tasks/introduction/*.spec.js",
     "test:variables": "mocha tasks/variables/test/*.spec.js",

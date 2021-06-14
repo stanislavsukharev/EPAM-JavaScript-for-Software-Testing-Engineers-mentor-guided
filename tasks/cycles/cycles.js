@@ -1,25 +1,23 @@
 /** TODO
  * implement factorial algorithm using for, while, do..while operators
- * assign result to corresponding variable
- * for - forFactorial
- * while - whileFactorial
- * do..while - doFactorial
+ * assign the result to corresponding variable
+ * for -> forFactorial
+ * while -> whileFactorial
+ * do..while -> doFactorial
  */
 let forFactorial, whileFactorial, doFactorial;
 const n = 10; //10! = 3628800
 
 /** TODO
- * return concatenated string from an array of substring
- * assign result to variable str
+ * return the concatenated string from an array of substring
+ * assign the result to variable 'str'
  */
 let str;
 const substr = ["I", " love", " JS"];
 
-
-
 /** TODO
  * calculate a total of income of certain person
- * assign result to variable totalIncome
+ * assign the result to the variable 'totalIncome'
  */
 let totalIncome;
 const personIncomes = {
