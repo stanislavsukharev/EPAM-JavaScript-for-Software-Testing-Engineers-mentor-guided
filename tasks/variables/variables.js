@@ -16,7 +16,7 @@
  */
 
 /**
- * TODO create variable named bool and set value equal to comparison of int and int2 variables
+ * TODO create variable named bool and set value of equality comparison of int and int2 variables
  */
 
 /**
