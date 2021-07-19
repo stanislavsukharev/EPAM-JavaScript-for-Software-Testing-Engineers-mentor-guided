@@ -33,7 +33,7 @@ describe('Task2', () => {
 
 describe('Task3', () => {
 
-    it('str', () => {
+    it('total income', () => {
         expect(totalIncome).to.equal(1335);
     });
 
