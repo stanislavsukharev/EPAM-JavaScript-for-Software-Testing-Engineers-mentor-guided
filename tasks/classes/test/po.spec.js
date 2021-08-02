@@ -1,10 +1,18 @@
-const { BasePage, LoginPage } = require('../pageObject');
-const { describe,it } = require('mocha');
-const { expect } = require('chai');
+const {
+	BasePage,
+	LoginPage
+} = require('../pageObject');
+const {
+	describe,
+	it
+} = require('mocha');
+const {
+	expect
+} = require('chai');
 const login = new LoginPage('www.test.com');
 
 describe('Page Object', () => {
-	
+
 	it('LoginPage should inherite BasePage', () => {
 		expect(login instanceof LoginPage, 'LoginPage is not inherited from BasePage').to.equal(true);
 		expect(login instanceof BasePage, 'LoginPage is not inherited from BasePage').to.equal(true);
@@ -24,6 +32,10 @@ describe('Page Object', () => {
 
 	it('login should be able to review the Footer', () => {
 		expect(login.footer.review()).to.contain('footer');
+	});
+
+	it("login should be able to review the Header", () => {
+		expect(login.header.review()).to.contain("header");
 	});
 
 	it('login page should be opened', () => {
