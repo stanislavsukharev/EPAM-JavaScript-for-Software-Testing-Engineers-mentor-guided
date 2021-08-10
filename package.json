@@ -14,7 +14,10 @@
     "test:classes": "mocha tasks/classes/test/classes.spec.js",
     "test:po": "mocha tasks/classes/test/po.spec.js",
     "test:async": "mocha tasks/async/*.spec.js",
-    "test:nodejs": "mocha tasks/nodeJs/test/*.spec.js"
+    "test:nodejs": "mocha tasks/nodeJs/test/*.spec.js",
+    "test:nodejs:cb": "mocha tasks/nodeJs-callback/test/*.spec.js",
+    "test:nodejs:pc": "mocha tasks/nodeJs-promise-chaining/test/*.spec.js",
+    "test:nodejs:aa": "mocha tasks/nodeJs-async-await/test/*.spec.js"
   },
   "repository": {
     "type": "git",
