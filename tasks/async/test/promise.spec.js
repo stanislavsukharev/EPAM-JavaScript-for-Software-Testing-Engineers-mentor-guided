@@ -53,12 +53,12 @@ describe('Async/await syntax', () => {
 
 	it('TASK-1: should resolve the promise using async/await syntax', async () => {
 		const result = await asyncPromiseResolve();
-		expect(result).to.equal("Resolved!");
+		expect(result).to.equal("Resolved! with async await");
 	});
 
 	it('TASK-2: should reject the promise using async/await syntax', async () => {
 		const result = await asyncPromiseReject();
-		expect(result).to.equal("Rejected!");
+		expect(result).to.equal("Rejected! with async await");
 	});
 
 	it('TASK-3: should return array of animals using async/await syntax', async () => {

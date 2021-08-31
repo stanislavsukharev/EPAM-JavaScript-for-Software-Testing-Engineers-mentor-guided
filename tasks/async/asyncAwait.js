@@ -15,26 +15,28 @@ const {
  */
 
 /**
- * TASK-1: Resolve the created earlier promiseResolve promise
- * using async/await syntax inside the asyncPromiseResolve function
- * @returns {Promise<"Resolved!">}
+ * TASK-1: Resolve the created earlier promiseResolve() promise
+ * using async/await syntax inside the asyncPromiseResolve function 
+ * and modify the message to -> Resolved! with async await
+ * @returns {Promise<"Resolved! with async await">}
  * 
  */
 async function asyncPromiseResolve() {
   const result = await promiseResolve();
-  return result;
+  return result + " with async await";
 }
 
 /**
- * TASK-2: Reject the created earlier promiseReject promise
+ * TASK-2: Reject the created earlier promiseReject() promise
  * using async/await syntax inside the asyncPromiseReject function
- * @returns {Promise<"Rejected!">}
+ * and modify the message to -> Rejected! with async await
+ * @returns {Promise<"Rejected! with async await">}
  */
 async function asyncPromiseReject() {
   try {
     await promiseReject();
   } catch (e) {
-    return e;
+    return e + " with async await";
   }
 }
 
