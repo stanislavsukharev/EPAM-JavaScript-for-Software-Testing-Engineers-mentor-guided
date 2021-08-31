@@ -1,6 +1,7 @@
 const {
 	BasePage,
-	LoginPage
+	LoginPage,
+	Component
 } = require('../pageObject');
 const {
 	describe,
@@ -9,7 +10,9 @@ const {
 const {
 	expect
 } = require('chai');
-const login = new LoginPage('www.test.com');
+const base = new BasePage("www.test.com");
+const login = new LoginPage("www.test.com", "/login");
+const footer = new Component("footer");
 
 describe('Page Object', () => {
 
@@ -19,41 +22,39 @@ describe('Page Object', () => {
 	});
 
 	it('url should be defined', () => {
-		expect(login.baseUrl).not.to.be.undefined;
+		expect(login.url).not.to.be.undefined;
 	});
 
-	it('login should contain Footer', () => {
-		expect(login).to.have.property('footer');
+	it('name should be defined within LoginPage', () => {
+		expect(login.name).not.to.be.undefined;
 	});
 
-	it('login should contain Header', () => {
-		expect(login).to.have.property('header');
+	it('BasePage should have open() method', () => {
+		expect(base.open()).to.contain('Open this');
 	});
 
-	it('login should be able to review the Footer', () => {
-		expect(login.footer.review()).to.contain('footer');
+	it('LoginPage should have open() method', () => {
+		expect(login.open()).to.contain('/login');
 	});
 
-	it("login should be able to review the Header", () => {
+	it('type should be defined within Component', () => {
+		expect(footer.type).not.to.be.undefined;
+	});
+
+	it('BasePage should have footer', () => {
+		expect(base.footer instanceof Component).to.equal(true);
+	});
+
+	it('BasePage should have header', () => {
+		expect(base.header instanceof Component).to.equal(true);
+	});
+
+	it("should be able to review the header from the LoginPage", () => {
 		expect(login.header.review()).to.contain("header");
 	});
 
-	it('login page should be opened', () => {
-		expect(login.open()).to.contain('login');
-	});
-
-	it('should be able to type an Email', () => {
-		expect(login.typeEmail('test@test.com')).to.contain('type');
-		expect(login.typeEmail('test@test.com')).to.contain('email');
-	});
-
-	it('should be able to type a Password', () => {
-		expect(login.typePassword('abc')).to.contain('type');
-		expect(login.typePassword('abc')).to.contain('password');
-	});
-
-	it('should be able submit the form', () => {
-		expect(login.clickSubmit()).to.contain('click');
+	it("should be able to review the header from the LoginPage", () => {
+		expect(login.footer.review()).to.contain("footer");
 	});
 
 });
