@@ -1,4 +1,5 @@
 /**
+ * JS Objects: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
  * create object person with firstName and lastName properties
  * implement method getFullName that returns full name
  */
