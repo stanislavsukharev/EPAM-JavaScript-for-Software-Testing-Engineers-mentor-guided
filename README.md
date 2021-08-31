@@ -104,9 +104,9 @@ npm run test:${module_name}
 #### Module 6: Objects, classes, and OOP
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/objects/objects.js" file.
-3. Do the tasks from "./tasks/classes/classes.js" file.
-4. Do the tasks from "./tasks/classes/pageObject.js" file.
+2. Do the tasks from "./tasks/oop/objects.js" file.
+3. Do the tasks from "./tasks/oop/classes.js" file.
+4. Do the tasks from "./tasks/oop/pageObject.js" file.
 5. To check the 1st part please use the script: npm run test:objects.
 6. To check the 2nd part please use the script: npm run test:classes.
 7. To check the 3rd please use the script: npm run test:po.
