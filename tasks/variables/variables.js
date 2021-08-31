@@ -1,6 +1,11 @@
 /**
+ * Materials: 
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+ */
+
+/**
  * TODO create variable named int and set value equal to 1
-*/
+ */
 
 
 /**
