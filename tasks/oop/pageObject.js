@@ -8,8 +8,8 @@
  * 1. LoginPage should be inherited from the BasePage
  * 2. BasePage should accept one argument 'url'
  * 3. LoginPage should use the parent constructor and extend it with one argument 'name'
- * 4. BasePage should have open() method that will get 'path' as a parameter
- * and return the string: "Open this ${path}"
+ * 4. BasePage should have open() method that will get 'pageName' as a parameter
+ * and return the string: "Open this ${this.url}/${pageName}"
  * 5. Login page should have open() method that will call the parent's open() method passing
  * 'this.name' as a parameter
  * 6. Component class should accept one argument 'type' 
@@ -24,8 +24,8 @@ class BasePage {
 		this.url = url;
 	}
 
-	open(path) {
-		return 'Open this ' + path;
+	open(pageName) {
+		return `Open this ${this.url}/${pageName}`;
 	}
 
 	get footer() {
