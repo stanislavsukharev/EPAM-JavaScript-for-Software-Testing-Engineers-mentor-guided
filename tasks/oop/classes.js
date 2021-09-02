@@ -1,5 +1,8 @@
 /**
- * JS Classes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+ * JS Classes: 
+ * - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+ * - https://javascript.info/class
+ * - https://javascript.info/class-inheritance
  * implement class Person with:
  * 1) properties firstName and lastName
  * 2) constructor that pass firstName and lastName to the object

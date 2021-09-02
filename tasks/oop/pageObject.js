@@ -3,6 +3,7 @@
  * Page object definition: 
  * - https://martinfowler.com/bliki/PageObject.html
  * - https://webdriver.io/docs/pageobjects/
+ * - https://javascript.info/class-inheritance
  * Inctruction:
  * 1. LoginPage should be inherited from the BasePage
  * 2. BasePage should accept one argument 'url'
