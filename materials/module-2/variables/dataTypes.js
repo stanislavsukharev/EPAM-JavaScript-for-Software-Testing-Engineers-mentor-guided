@@ -30,5 +30,7 @@ let falseValue = false;
 /**
  * Objects
  */
-const obj = { key: 'value' };
-const arr = [1,2,'1','2'];
+const obj = {
+  key: 'value'
+};
+const arr = [1, 2, '1', '2'];

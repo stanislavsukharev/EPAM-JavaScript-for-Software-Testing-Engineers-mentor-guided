@@ -1,7 +1,7 @@
 if (2 * 4 == 8) {
-      console.log('That is right!');
-  } else {
-      console.log('Wrong!');
+  console.log('That is right!');
+} else {
+  console.log('Wrong!');
 }
 
 const num = 50;
@@ -9,15 +9,17 @@ const num = 50;
 if (num < 49) {
   console.log('Wrong!');
 } else if (num > 100) {
-    console.log('Too much!');
+  console.log('Too much!');
 } else {
-    console.log('That is right!');
+  console.log('That is right!');
 }
 
 /**
  * Ternary operator
  */
-(num == 50) ? console.log('That is right!') : console.log('Wrong!');
+
+let result = (num == 50) ? 'That is right!' : 'Wrong!';
+console.log(result); // result will store 'That is right value'
 
 /**
  * switch / case
