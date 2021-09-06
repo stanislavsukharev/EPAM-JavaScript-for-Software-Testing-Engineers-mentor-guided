@@ -1,6 +1,6 @@
 {
   "name": "js-mentoring-program",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "JavaScript Mentoring Program",
   "scripts": {
     "test:intro": "mocha tasks/introduction/*.spec.js",
@@ -24,11 +24,14 @@
     "Dzmitry_Shaplyka@epam.com",
     "Oleksandr_Halichenko@epam.com"
   ],
-  "license": "ISC",
+  "license": "EPAM Systems",
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.0.1",
     "node-fetch": "^2.6.0",
     "sinon": "latest"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

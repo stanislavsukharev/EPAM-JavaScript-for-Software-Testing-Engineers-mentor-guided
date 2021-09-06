@@ -22,8 +22,7 @@ const {
  * 
  */
 async function asyncPromiseResolve() {
-  const result = await promiseResolve();
-  return result + " with async await";
+  //PLACE YOUR CODE HERE:
 }
 
 /**
@@ -33,11 +32,7 @@ async function asyncPromiseResolve() {
  * @returns {Promise<"Rejected! with async await">}
  */
 async function asyncPromiseReject() {
-  try {
-    await promiseReject();
-  } catch (e) {
-    return e + " with async await";
-  }
+  //PLACE YOUR CODE HERE:
 }
 
 /**
@@ -47,8 +42,7 @@ async function asyncPromiseReject() {
  * @returns 
  */
 async function asyncPromiseAll() {
-  const result = await Promise.all([getDogs(), getCats(), getBirds()]);
-  return result;
+  //PLACE YOUR CODE HERE:
 }
 
 module.exports = {

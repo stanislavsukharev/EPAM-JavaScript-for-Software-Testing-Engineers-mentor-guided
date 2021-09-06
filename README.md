@@ -27,7 +27,7 @@
 
 ## Installation
 
-Project requires [Node.js](https://nodejs.org/) v10+ to run.
+Project requires [Node.js](https://nodejs.org/) v14+ to run.
 Install the dependencies.
 
 ```sh
@@ -44,7 +44,7 @@ npm run test:${module_name}
 #### Module 1: Introduction. Setup working environment
 
 1. Install VSCode: https://code.visualstudio.com/download and add needed extensions (please find them in the materials attached)
-2. Install NodeJS: https://nodejs.org/en/download/
+2. Install NodeJS LTS: https://nodejs.org/en/download/
 3. Install GIT: https://git-scm.com/downloads
 4. Navigate to https://git.epam.com/Dzmitry_Shaplyka/js-mentoring-program
 5. Fork the repository

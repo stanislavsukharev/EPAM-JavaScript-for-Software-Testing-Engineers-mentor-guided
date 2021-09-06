@@ -14,9 +14,7 @@ const {
  */
 
 function promiseResolve() {
-	return new Promise((resolve, reject) => {
-		resolve("Resolved!");
-	});
+	//PLACE YOUR CODE HERE:
 }
 
 /**
@@ -27,9 +25,7 @@ function promiseResolve() {
  */
 
 function promiseReject() {
-	return new Promise((resolve, reject) => {
-		reject("Rejected!");
-	});
+	//PLACE YOUR CODE HERE:
 }
 
 /**
@@ -39,13 +35,7 @@ function promiseReject() {
  */
 
 function fullPromise(param) {
-	return new Promise((resolve, reject) => {
-		if (param) {
-			resolve("Resolved!");
-		} else {
-			reject("Rejected!");
-		}
-	});
+	//PLACE YOUR CODE HERE:
 }
 
 /**
@@ -58,12 +48,7 @@ function fullPromise(param) {
 let chainingResult = '';
 
 async function promisesChaining() {
-	return firstPromise()
-		.then(res => {
-			chainingResult = res;
-			return secondPromise();
-		})
-		.then(res => chainingResult += ` ${res}`);
+	//PLACE YOUR CODE HERE:
 }
 
 
@@ -76,9 +61,7 @@ async function promisesChaining() {
  */
 
 async function getAnimals() {
-	let anmls = [];
-	return Promise.all([getDogs(), getCats(), getBirds()])
-		.then(animals => anmls.concat(animals[0], animals[1], animals[2]));
+	//PLACE YOUR CODE HERE:
 }
 
 module.exports = {
