@@ -89,10 +89,10 @@ let statement2 = 0 > 1;
 let antitruth = !statement1;
 // console.log('antitruth =', antitruth);
 
-let or = statement1 || statement2
+let or = statement1 || statement2;
 // console.log('or =', or);
 
-let and = statement1 && statement2
+let and = statement1 && statement2;
 // console.log('and =', and);
 
 // typeof

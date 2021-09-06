@@ -1,9 +1,16 @@
 /**
+ * Learning materials:
+ * Function declaration: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
+ * Function expression: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
+ * Arrow functions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+ */
+
+/**
  * write function that will do sum for two numbers
  *
  */
 function sum(a, b) {
-	
+
 }
 
 /**
@@ -46,6 +53,7 @@ function getGoogle(n) {
 /**
  * write function that returns object based on the given information 
  * (params may be null, so, please use default ones)
+ * @example
  * getUser("John", "Dou", 42) should return
  * {
  *    firstName: "John"
@@ -59,7 +67,7 @@ function getUser(firstName, lastName, age) {
 
 /**
  * write function that calculates total path traveled.
- * path represended as array of objects with field distance and direction
+ * path represented as array of objects with field distance and direction
  * e.g [{direction: "Kiyv - Minsk", distance: 567}, {direction: "Kiyv - Paris", distance: 2402}]
  */
 
@@ -70,6 +78,7 @@ function getTotalPath(path) {
 /**
  * write a function that will calculate a discount considering the Amount
  * and the percentage (hint: you need to use the Closure here)
+ * JS Closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
  * @param {percentage} num
  * @param {amount} num
  * @example
@@ -80,8 +89,7 @@ function getTotalPath(path) {
 
 function discountFunction(percentage) {
 
-	return function (amount) {
-	};
+	return function (amount) {};
 }
 
 /**

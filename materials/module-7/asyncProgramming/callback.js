@@ -4,10 +4,15 @@
  */
 
 
-function f1() {
-
+function f1(callback) {
+  return setTimeout(() => {
+    console.log('f1');
+    callback();
+  }, 2000);
 }
 
 function f2() {
-  
+  return setTimeout(() => console.log('f2'), 1000);
 }
+
+f1(f2);

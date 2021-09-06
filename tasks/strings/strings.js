@@ -1,6 +1,7 @@
 /**
  * 1. Write a method to reverse a string; 
  * 2. The method should return the string 'This is not a string!' if trying to pass a number
+ * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
  * @param {string} str
  * @return {string} reversed string
  * @example
@@ -19,6 +20,7 @@ function reverseString(str) {
  * console.log(centuryFromYear(1705)) // 18
  * console.log(centuryFromYear(1900)) // 19
  * console.log(centuryFromYear(1601)) // 17
+ * hint: please choose and appropriate method from the Math object
  */
 function centuryFromYear(year) {
 
@@ -33,6 +35,7 @@ function centuryFromYear(year) {
  * console.log(strCount('Hello', 'o')) // 1
  * console.log(strCount('Hello', 'l')) // 2
  * console.log(strCount('', 'z')) // 0
+ * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
  */
 function strCount(str, char) {
 
@@ -59,6 +62,7 @@ function truncateString(str, num) {
  * @return {string} - updated text
  * @example
  * console.log(replace10("231054")) // 23ten54
+ * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
  */
 function replace10(text) {
 
