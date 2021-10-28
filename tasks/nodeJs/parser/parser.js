@@ -20,14 +20,15 @@
  * 		fs.writeFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_writefile_file_data_options_callback
  *
  * 2. Check yourself by running "npm run test:nodejs"
+ *
+ * Hint. Use the "done" callback function to synchronize operations.
  */
-const fs = require('fs');
+const fs = require("fs");
 
-const jsonParser = () => {
-
+const jsonParser = (done) => {
+  done();
 };
 
 module.exports = {
-	jsonParser
+  jsonParser,
 };
-
