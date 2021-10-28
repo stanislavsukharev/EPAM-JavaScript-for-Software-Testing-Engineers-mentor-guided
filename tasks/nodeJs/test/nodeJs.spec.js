@@ -9,7 +9,7 @@ describe("Fetch method", () => {
   let responseJson;
 
   before(async () => {
-    // cleanUpArtifacts();
+    cleanUpArtifacts();
     await sendRequest();
   });
 
@@ -30,7 +30,7 @@ describe("JSON Parser", () => {
   let parserJson;
 
   before((done) => {
-    // cleanUpArtifacts();
+    cleanUpArtifacts();
     jsonParser(done);
   });
 
