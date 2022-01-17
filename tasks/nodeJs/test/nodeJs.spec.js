@@ -29,9 +29,9 @@ describe("Fetch method", () => {
 describe("JSON Parser", () => {
   let parserJson;
 
-  before((done) => {
+  before(async () => {
     cleanUpArtifacts();
-    jsonParser(done);
+    await jsonParser();
   });
 
   beforeEach(() => (parserJson = require("../parser/parsed.json")));
