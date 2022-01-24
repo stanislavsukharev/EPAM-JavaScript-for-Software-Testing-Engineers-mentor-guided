@@ -13,11 +13,11 @@
  * where 077b1523-56f0-492a-b954-1269e3acc191 - is the value of the name attribute from the "./test.json" file
  * Please NOTE, that you should omit the ".html" extension
  *
- * Use the callback version of FS module.
+ * Use the promise version of FS module.
  * DOCS:
- * 		Callback example: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_callback_example
- * 		fs.readFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_readfile_path_options_callback
- * 		fs.writeFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_writefile_file_data_options_callback
+ * 		Callback example: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_promise_example
+ * 		fs.readFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fspromises_readfile_path_options
+ * 		fs.writeFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fspromises_writefile_file_data_options
  *
  * 2. Check yourself by running "npm run test:nodejs"
  *
