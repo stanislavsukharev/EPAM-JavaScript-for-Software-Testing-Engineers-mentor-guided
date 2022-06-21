@@ -45,10 +45,13 @@ function fullPromise(param) {
  * variable 'chainingResult' = 'Promises chained';
  * Please do the chaining inside of the promisesChaining function
  */
-let chainingResult = '';
 
 async function promisesChaining() {
-	//PLACE YOUR CODE HERE:
+	let chainingResult = '';
+
+	//PLACE YOUR CODE BETWEEN THIS LINE:
+
+	//AND THIS ONE:
 }
 
 

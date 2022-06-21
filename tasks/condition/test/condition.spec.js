@@ -5,10 +5,7 @@ const {
   z2,
   x,
   y,
-  alpha,
-  beta,
-  operator,
-  task2,
+  calc,
   redemption,
   discount
 } = require('../condition');
@@ -34,12 +31,10 @@ describe('Task 1 - y < 10', () => {
 describe('Task 2 - operator', () => {
 
   it('task2 should equal expected value', () => {
-    const ex = expect(task2);
-    if (operator === 'add') ex.to.equal(alpha + beta);
-    else if (operator === 'subtract') ex.to.equal(alpha - beta);
-    else if (operator === 'multiply') ex.to.equal(alpha * beta);
-    else if (operator === 'divide') ex.to.equal(alpha / beta);
-    else throw new Error('operator is wrong');
+    expect(calc("add", 6, 2)).to.equal(8);
+    expect(calc("subtract", 5, 3)).to.equal(2);
+    expect(calc("multiply", 3, 2)).to.equal(6);
+    expect(calc("divide", 4, 2)).to.equal(2);
   });
 
 });

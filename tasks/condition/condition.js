@@ -13,16 +13,20 @@ const y = 7;
 
 
 /** Task: 2
- * The system receives 3 params - alpha, beta, operator.
- * Operator can pass 4 possible values - "add", "subtract", "multiply", "divide".
+ * The system receives 3 params - operator, alpha, beta.
+ * Operator can have 4 possible values - "add", "subtract", "multiply", "divide".
  * Implement the logic when the system does appropriate operation based on the passed operator param.
  * Assign result to task2 variable
  * Hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
  */
-let task2;
-const alpha = 3;
-const beta = 7;
-const operator = "add";
+
+function calc(operator, alpha, beta) {
+    let task2;
+    //PLACE YOUR CODE BETWEEN THIS LINE:
+
+    //AND THIS ONE:
+    return task2;
+}
 
 
 /**
@@ -45,10 +49,7 @@ module.exports = {
     z2,
     x,
     y,
-    alpha,
-    beta,
-    operator,
-    task2,
+    calc,
     redemption,
     discount
 };
