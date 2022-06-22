@@ -28,9 +28,7 @@ describe('Task 2 - Variables and Data Types', () => {
     const expected = [1,2,3,4,5];
 
     expect(Array.isArray(vars.arr)).to.equal(true);
-    vars.arr.forEach(el => {
-      expect(expected.includes(el), 'arr variable is not equal to [1,2,3,4,5]').to.equal(true);
-    });
+    expect(vars.arr, 'arr variable is not equal to [1,2,3,4,5]').to.deep.equal(expected);
   });
 
   it('fifth variable should be created', () => {
