@@ -40,8 +40,15 @@ function calc(operator, alpha, beta) {
  * - 2701 - 6500: 45
  * assign the result to the 'discount' variable
  */
-const redemption = 420;
-let discount;
+function calculateDiscount(redemption) {
+    let discount;
+    //PLACE YOUR CODE BETWEEN THIS LINE:
+
+    //AND THIS ONE:
+    return discount;
+
+}
+
 
 
 module.exports = {
@@ -50,6 +57,5 @@ module.exports = {
     x,
     y,
     calc,
-    redemption,
-    discount
+    calculateDiscount
 };

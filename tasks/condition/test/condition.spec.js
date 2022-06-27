@@ -6,8 +6,7 @@ const {
   x,
   y,
   calc,
-  redemption,
-  discount
+  calculateDiscount
 } = require('../condition');
 
 describe('Task 1 - y < 10', () => {
@@ -42,11 +41,13 @@ describe('Task 2 - operator', () => {
 describe('Task 3 - discount', () => {
 
   it('discount should equal expected value', () => {
-    const ex = expect(discount);
-    if (redemption - 351 < 0) ex.to.equal(0);
-    else if (redemption - 1351 < 0) ex.to.equal(15);
-    else if (redemption - 2701 < 0) ex.to.equal(30);
-    else if (redemption - 6501 < 0) ex.to.equal(45);
+    expect(calculateDiscount(10), "10 redemption should produce 0% discount").to.equal(0);
+    expect(calculateDiscount(350), "350 redemption should produce 0% discount").to.equal(0);
+    expect(calculateDiscount(351), "351 redemption should produce 15% discount").to.equal(15);
+    expect(calculateDiscount(400), "400 redemption should produce 15% discount").to.equal(15);
+    expect(calculateDiscount(1351), "1351 redemption should produce 30% discount").to.equal(30);
+    expect(calculateDiscount(2000), "2000 redemption should produce 30% discount").to.equal(30);
+    expect(calculateDiscount(6000), "6000 redemption should produce 45% discount").to.equal(45);
   });
 
 });
