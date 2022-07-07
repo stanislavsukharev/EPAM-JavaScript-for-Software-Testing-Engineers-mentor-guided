@@ -1,10 +1,8 @@
 const expect = require('chai').expect;
 
 const {
-  z1,
-  z2,
-  x,
-  y,
+  taskA,
+  taskB,
   calc,
   calculateDiscount
 } = require('../condition');
@@ -12,17 +10,15 @@ const {
 describe('Task 1 - y < 10', () => {
 
   it('z1 should equal expected value', () => {
-    const ex = expect(z1);
-    if (y < 10) ex.to.equal(x + y);
-    else if (y > 10) ex.to.equal(x * y);
-    else throw new Error('y is wrong');
+    expect(taskA(3, 7), "x = 3; y = 7 → 3 + 7 should equal 10").to.equal(10);
+    expect(taskA(8, 15), "x = 8; y = 15 → 8 * 15 should equal 120").to.equal(120);
+    expect(taskA(20, 10), "x = 20; y = 10 → 20 * 10 should equal 200").to.equal(200);
   });
 
   it('z2 should equal expected value', () => {
-    const ex = expect(z2);
-    if (y < 10) ex.to.equal(x + y);
-    else if (y > 10) ex.to.equal(x * y);
-    else throw new Error('y is not defined');
+    expect(taskB(3, 7), "x = 3; y = 7 → 3 + 7 should equal 10").to.equal(10);
+    expect(taskB(8, 15), "x = 8; y = 15 → 8 * 15 should equal 120").to.equal(120);
+    expect(taskB(20, 10), "x = 20; y = 10 → 20 * 10 should equal 200").to.equal(200);
   });
 
 });
@@ -30,10 +26,10 @@ describe('Task 1 - y < 10', () => {
 describe('Task 2 - operator', () => {
 
   it('task2 should equal expected value', () => {
-    expect(calc("add", 6, 2)).to.equal(8);
-    expect(calc("subtract", 5, 3)).to.equal(2);
-    expect(calc("multiply", 3, 2)).to.equal(6);
-    expect(calc("divide", 4, 2)).to.equal(2);
+    expect(calc("add", 6, 2), "6 + 2 should equal 8").to.equal(8);
+    expect(calc("subtract", 5, 3), "5 - 3 should equal 2").to.equal(2);
+    expect(calc("multiply", 3, 2), "3 * 2 should equal 6").to.equal(6);
+    expect(calc("divide", 4, 2), "4 / 2 should equal 2").to.equal(2);
   });
 
 });
@@ -48,6 +44,7 @@ describe('Task 3 - discount', () => {
     expect(calculateDiscount(1351), "1351 redemption should produce 30% discount").to.equal(30);
     expect(calculateDiscount(2000), "2000 redemption should produce 30% discount").to.equal(30);
     expect(calculateDiscount(6000), "6000 redemption should produce 45% discount").to.equal(45);
+
   });
 
 });

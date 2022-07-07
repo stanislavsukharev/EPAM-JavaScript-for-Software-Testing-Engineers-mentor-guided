@@ -3,13 +3,24 @@
  * Implement the logic when z equal to sum of x and y in case if y less than 10
  * or multiplication in case of greater or equal than 10
  * result assign to z1 and z2 variables accordingly
- * Task 1 - if else - z1 : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
- * Task 2 - ternary operator - z2: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+ * Task A - if else - z1 : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+ * Task B - ternary operator - z2: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
  */
-let z1;
-let z2;
-const x = 3;
-const y = 7;
+function taskA(x, y) {
+    let z1;
+    //PLACE YOUR CODE BETWEEN THIS LINE:
+
+    //AND THIS ONE:
+    return z1;
+}
+
+function taskB(x, y) {
+    let z2;
+    //PLACE YOUR CODE BETWEEN THIS LINE:
+
+    //AND THIS ONE:
+    return z2;
+}
 
 
 /** Task: 2
@@ -40,22 +51,18 @@ function calc(operator, alpha, beta) {
  * - 2701 - 6500: 45
  * assign the result to the 'discount' variable
  */
+
 function calculateDiscount(redemption) {
     let discount;
     //PLACE YOUR CODE BETWEEN THIS LINE:
 
     //AND THIS ONE:
     return discount;
-
 }
 
-
-
 module.exports = {
-    z1,
-    z2,
-    x,
-    y,
+    taskA,
+    taskB,
     calc,
     calculateDiscount
 };
