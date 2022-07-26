@@ -76,8 +76,8 @@ function getTotalPath(path) {
 }
 
 /**
- * write a function that will calculate a discount considering the Amount
- * and the percentage (hint: you need to use the Closure here)
+ * write a function that calculates a final price considering the Amount 
+ * reduced by discount percentage(hint: you need to use the Closure here)
  * JS Closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
  * @param {percentage} num
  * @param {amount} num
