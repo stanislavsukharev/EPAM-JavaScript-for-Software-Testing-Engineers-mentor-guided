@@ -43,15 +43,15 @@ function fullPromise(param) {
  * from the './utils/utilPromises' file) 
  * and store the result to the
  * variable 'chainingResult' = 'Promises chained';
- * Please do the chaining inside of the promisesChaining function
+ * Please do the chaining inside of the promisesChaining function (please do NOT use async/await)
  */
 
-async function promisesChaining() {
+function promisesChaining() {
 	let chainingResult = '';
 
 	//PLACE YOUR CODE BETWEEN THIS LINE:
 
-	//AND THIS ONE:
+	//AND THIS ONE
 }
 
 
@@ -61,10 +61,13 @@ async function promisesChaining() {
  * getAnimals() -> ["dogs", "cats", "birds"]
  * @returns {Promise<"["dogs", "cats", "birds"]">}
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+ * do NOT use async/await syntax here
  */
 
-async function getAnimals() {
-	//PLACE YOUR CODE HERE:
+function getAnimals() {
+	//PLACE YOUR CODE BETWEEN THIS LINE:
+
+	//AND THIS ONE
 }
 
 module.exports = {
