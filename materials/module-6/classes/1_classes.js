@@ -3,14 +3,12 @@
  */
 const car = {
   brand: 'ford',
-  year: 1994
+  year: 1994,
 };
 
 /**
  * Create a class with methods
  */
-
-
 
 class Car {
   constructor(brand, year) {

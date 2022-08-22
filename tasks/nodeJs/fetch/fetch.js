@@ -9,8 +9,7 @@
  * 2. Save the payload of the response to "./response.json" file with only items which id less than 20.
  * Use the promisified version of FS module.
  * DOCS:
- * 		Promise example: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_promise_example
- * 		fsPromises.writeFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fspromises_writefile_file_data_options
+ * 		fs.writeFile: https://nodejs.org/docs/latest-v16.x/api/fs.html#fspromiseswritefilefile-data-options
  *
  * 3. Check yourself by running "npm run test:nodejs"
  */
@@ -22,10 +21,9 @@ const fs = require('fs/promises');
  * Use the fs.writeFile method inside the function
  */
 const sendRequest = async () => {
-	//put your code here
+  //put your code here
 };
 
-
 module.exports = {
-	sendRequest
+  sendRequest,
 };

@@ -15,9 +15,8 @@
  *
  * Use the promise version of FS module.
  * DOCS:
- * 		Callback example: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_promise_example
- * 		fs.readFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fspromises_readfile_path_options
- * 		fs.writeFile: https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fspromises_writefile_file_data_options
+ * 		fs.readFile: https://nodejs.org/docs/latest-v16.x/api/fs.html#fspromisesreadfilepath-options
+ * 		fs.writeFile: https://nodejs.org/docs/latest-v16.x/api/fs.html#fspromiseswritefilefile-data-options
  *
  * 2. Check yourself by running "npm run test:nodejs"
  *

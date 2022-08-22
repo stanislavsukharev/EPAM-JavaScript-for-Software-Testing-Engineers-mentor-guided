@@ -7,10 +7,10 @@ const newArr = [...arr];
 
 const obj = {
   a: 1,
-  b: 2
+  b: 2,
 };
 const newObj = {
-  ...obj
+  ...obj,
 };
 
 /**
@@ -25,18 +25,18 @@ const numbers = [1, 2, 3];
 log(numbers); // it won't work
 log(...numbers); //will work
 
-
 /**
  * Destruct an object
  */
 const destrObj = {
   firstName: 'Joe',
-  lastName: 'Doe'
+  lastName: 'Doe',
 };
 
 const {
   firstName, //will store 'Joe' value
-  lastName // will store 'Doe' value
+  lastName, // will store 'Doe' value
 } = destrObj;
+
 console.log(firstName);
 console.log(lastName);

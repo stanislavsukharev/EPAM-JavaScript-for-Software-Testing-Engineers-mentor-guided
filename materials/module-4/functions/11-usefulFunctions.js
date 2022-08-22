@@ -11,9 +11,9 @@ let numbr = 15.2;
 console.log(Math.round(numbr)); // 15
 
 let pix = '12px';
-console.log(parseInt(pix)); // 12 
+console.log(parseInt(pix)); // 12
 
-let letter = 'k';
-console.log(letter.repeat(6)); //kkkkkk 
+let letter = 'k';
+console.log(letter.repeat(6)); //kkkkkk
 
 //length

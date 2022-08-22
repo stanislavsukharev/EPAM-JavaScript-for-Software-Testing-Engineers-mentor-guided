@@ -2,8 +2,4 @@
 //   return a + b;
 // };
 
-
-
-
-
 //short form

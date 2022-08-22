@@ -1,8 +1,1 @@
-module.exports = [
-  'name',
-  'lastName',
-  'age',
-  'friends',
-  'keys',
-  'call'
-];
+module.exports = ['name', 'lastName', 'age', 'friends', 'keys', 'call'];

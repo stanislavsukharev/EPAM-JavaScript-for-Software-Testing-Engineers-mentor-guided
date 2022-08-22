@@ -5,5 +5,5 @@ const sayHello = () => {
 
 module.exports = {
   str,
-  sayHello
+  sayHello,
 };

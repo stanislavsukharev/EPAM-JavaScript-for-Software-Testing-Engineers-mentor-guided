@@ -11,8 +11,8 @@ class Car {
     return `I have a car with the brand ${this.brand} and ${this.year} year`;
   }
   /**
- * Getters / setters
- */
+   * Getters / setters
+   */
   get myBrand() {
     return this.brand;
   }

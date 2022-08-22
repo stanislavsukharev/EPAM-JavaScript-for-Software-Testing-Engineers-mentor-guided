@@ -2,7 +2,10 @@
   "name": "js-mentoring-program",
   "version": "1.8.2",
   "description": "JavaScript Mentoring Program",
+  "license": "EPAM Systems",
   "scripts": {
+    "prepare": "husky install",
+    "lint": "prettier -w .",
     "test:intro": "mocha tasks/introduction/*.spec.js",
     "test:variables": "mocha tasks/variables/test/*.spec.js",
     "test:cycles": "mocha tasks/cycles/test/*.spec.js",
@@ -24,14 +27,19 @@
     "Dzmitry_Shaplyka@epam.com",
     "Oleksandr_Halichenko@epam.com"
   ],
-  "license": "EPAM Systems",
   "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^7.0.1",
-    "node-fetch": "^2.6.0",
-    "sinon": "latest"
+    "@types/chai": "4.3.3",
+    "@types/mocha": "9.1.1",
+    "@types/node": "^14.18.25",
+    "@types/sinon": "10.0.13",
+    "chai": "4.3.6",
+    "husky": "8.0.1",
+    "mocha": "10.0.0",
+    "node-fetch": "2.6.7",
+    "prettier": "2.7.1",
+    "sinon": "14.0.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   }
 }

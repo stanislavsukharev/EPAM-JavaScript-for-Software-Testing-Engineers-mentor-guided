@@ -1,8 +1,8 @@
 const employee = {
   title: 'default title',
-  getTitle: function() {
+  getTitle: function () {
     return console.log(this.title);
-  }
+  },
 };
 
 employee.sayHello();

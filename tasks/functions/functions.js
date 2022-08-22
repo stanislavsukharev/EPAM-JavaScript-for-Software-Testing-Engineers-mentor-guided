@@ -9,9 +9,7 @@
  * write function that will do sum for two numbers
  *
  */
-function sum(a, b) {
-
-}
+function sum(a, b) {}
 
 /**
  * write function that returns firstName and lastName of a given object
@@ -20,38 +18,30 @@ function sum(a, b) {
  *    lastName: "Dou"
  * }
  */
-function getFullName(object) {
-
-}
+function getFullName(object) {}
 
 /**
- * write fuction that checks if number is odd
+ * write function that checks if number is odd
  * true if odd, false if even
  */
-function isOdd(n) {
-
-}
+function isOdd(n) {}
 
 /**
  * write function that returns shortest of the words in the given array
  * @example
  * console.log(getShortest(["one", "two", "three"])) // one
  */
-function getShortest(wordArray) {
-
-}
+function getShortest(wordArray) {}
 
 /**
  * write function that returns word google with given numbers of "o" symbols
  * @example
  * console.log(getGoogle(5)) // gooooogle
  */
-function getGoogle(n) {
-
-}
+function getGoogle(n) {}
 
 /**
- * write function that returns object based on the given information 
+ * write function that returns object based on the given information
  * (params may be null, so, please use default ones)
  * @example
  * getUser("John", "Dou", 42) should return
@@ -61,9 +51,7 @@ function getGoogle(n) {
  *    age: 42
  * }
  */
-function getUser(firstName, lastName, age) {
-
-}
+function getUser(firstName, lastName, age) {}
 
 /**
  * write function that calculates total path traveled.
@@ -71,12 +59,10 @@ function getUser(firstName, lastName, age) {
  * e.g [{direction: "Kiyv - Minsk", distance: 567}, {direction: "Kiyv - Paris", distance: 2402}]
  */
 
-function getTotalPath(path) {
-
-}
+function getTotalPath(path) {}
 
 /**
- * write a function that calculates a final price considering the Amount 
+ * write a function that calculates a final price considering the Amount
  * reduced by discount percentage(hint: you need to use the Closure here)
  * JS Closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
  * @param {percentage} num
@@ -88,8 +74,7 @@ function getTotalPath(path) {
  */
 
 function discountFunction(percentage) {
-
-	return function (amount) {};
+  return function (amount) {};
 }
 
 /**
@@ -100,27 +85,26 @@ function discountFunction(percentage) {
  */
 
 const myObject = {
-	name: 'John',
-	lastName: 'Doe',
-	age: 25,
-	friends: ['Mike', 'Alan', 'Daniel'],
-	keys() {
-		//write your code here
-	},
-	call() {
-		//write your code here
-	}
-
+  name: 'John',
+  lastName: 'Doe',
+  age: 25,
+  friends: ['Mike', 'Alan', 'Daniel'],
+  keys() {
+    //write your code here
+  },
+  call() {
+    //write your code here
+  },
 };
 
 module.exports = {
-	sum,
-	getFullName,
-	isOdd,
-	getShortest,
-	getGoogle,
-	getUser,
-	getTotalPath,
-	discountFunction,
-	myObject
+  sum,
+  getFullName,
+  isOdd,
+  getShortest,
+  getGoogle,
+  getUser,
+  getTotalPath,
+  discountFunction,
+  myObject,
 };

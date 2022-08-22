@@ -1,7 +1,7 @@
 const options = {
   width: 1024,
   height: 1024,
-  name: "test"
+  name: 'test',
 };
 
 /**
@@ -20,14 +20,13 @@ console.log(`KEYS: ${Object.keys(options)}`);
 //  */
 console.log(`VALUES: ${Object.values(options)}`);
 
-
 /**
  * Copy the object
  */
 
 const obj1 = {
   a: 1,
-  b: 2
+  b: 2,
 };
 
 // /**
@@ -35,15 +34,14 @@ const obj1 = {
 //  */
 const target = {
   a: 1,
-  b: 2
+  b: 2,
 };
 const source = {
   b: 4,
-  c: 5
+  c: 5,
 };
 
 // const returnedTarget = Object.assign({}, source);
-
 
 // console.log(target); // { a: 1, b: 4, c: 5 }
 // console.log(returnedTarget); // { a: 1, b: 4, c: 5 }
