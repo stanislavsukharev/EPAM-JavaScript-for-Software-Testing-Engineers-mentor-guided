@@ -1,5 +1,5 @@
 /**
- * 1. Write a method to reverse a string; 
+ * 1. Write a method to reverse a string;
  * 2. The method should return the string 'This is not a string!' if trying to pass a number
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
  * @param {string} str
@@ -8,9 +8,7 @@
  * console.log(reverseString('hello)) // 'olleh'
  * console.log(reverseString(123)) // 'This is not a string!'
  */
-function reverseString(str) {
-
-}
+function reverseString(str) {}
 
 /**
  * Calculate a century by given year if a number is passed
@@ -22,9 +20,7 @@ function reverseString(str) {
  * console.log(centuryFromYear(1601)) // 17
  * hint: please choose and appropriate method from the Math object
  */
-function centuryFromYear(year) {
-
-}
+function centuryFromYear(year) {}
 
 /**
  * Calculate how many times the 'char' appears in the provided 'string'
@@ -37,13 +33,11 @@ function centuryFromYear(year) {
  * console.log(strCount('', 'z')) // 0
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
  */
-function strCount(str, char) {
-
-}
+function strCount(str, char) {}
 
 /**
  * Write a method to reduce the length of the string or truncate if it is longer
- * than the given maximum length and add "..." to the end. 
+ * than the given maximum length and add "..." to the end.
  * Keep it as is if it is not that long.
  * @param {string} str - the initial string
  * @param {num} num - by wht amount of chars it should be truncated
@@ -52,9 +46,7 @@ function strCount(str, char) {
  * console.log(truncateString('This is a long string', 6)) // 'This i...'
  * console.log(truncateString('This', 6)) // 'This'
  */
-function truncateString(str, num) {
-
-}
+function truncateString(str, num) {}
 
 /**
  * replace 10 with 'ten' word
@@ -64,9 +56,7 @@ function truncateString(str, num) {
  * console.log(replace10("231054")) // 23ten54
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
  */
-function replace10(text) {
-
-}
+function replace10(text) {}
 
 /**
  * replace value in the square brackets with CONFIDENTIAL
@@ -75,9 +65,7 @@ function replace10(text) {
  * @example
  * console.log(replaceConfidential("lorem [ipsum] si dolor")) // lorem [CONFIDENTIAL] si dolor
  */
-function replaceConfidential(text) {
-
-}
+function replaceConfidential(text) {}
 
 module.exports = {
   reverseString,
@@ -85,5 +73,5 @@ module.exports = {
   strCount,
   truncateString,
   replace10,
-  replaceConfidential
+  replaceConfidential,
 };

@@ -7,21 +7,20 @@
  * Task B - ternary operator - z2: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
  */
 function taskA(x, y) {
-    let z1;
-    //PLACE YOUR CODE BETWEEN THIS LINE:
+  let z1;
+  //PLACE YOUR CODE BETWEEN THIS LINE:
 
-    //AND THIS ONE:
-    return z1;
+  //AND THIS ONE:
+  return z1;
 }
 
 function taskB(x, y) {
-    let z2;
-    //PLACE YOUR CODE BETWEEN THIS LINE:
+  let z2;
+  //PLACE YOUR CODE BETWEEN THIS LINE:
 
-    //AND THIS ONE:
-    return z2;
+  //AND THIS ONE:
+  return z2;
 }
-
 
 /** Task: 2
  * The system receives 3 params - operator, alpha, beta.
@@ -32,13 +31,12 @@ function taskB(x, y) {
  */
 
 function calc(operator, alpha, beta) {
-    let task2;
-    //PLACE YOUR CODE BETWEEN THIS LINE:
+  let task2;
+  //PLACE YOUR CODE BETWEEN THIS LINE:
 
-    //AND THIS ONE:
-    return task2;
+  //AND THIS ONE:
+  return task2;
 }
-
 
 /**
  * Task: 3
@@ -53,16 +51,16 @@ function calc(operator, alpha, beta) {
  */
 
 function calculateDiscount(redemption) {
-    let discount;
-    //PLACE YOUR CODE BETWEEN THIS LINE:
+  let discount;
+  //PLACE YOUR CODE BETWEEN THIS LINE:
 
-    //AND THIS ONE:
-    return discount;
+  //AND THIS ONE:
+  return discount;
 }
 
 module.exports = {
-    taskA,
-    taskB,
-    calc,
-    calculateDiscount
+  taskA,
+  taskB,
+  calc,
+  calculateDiscount,
 };

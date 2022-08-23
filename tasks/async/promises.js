@@ -1,10 +1,4 @@
-const {
-	getDogs,
-	getCats,
-	getBirds,
-	firstPromise,
-	secondPromise
-} = require("./utils/utilPromises");
+const { getDogs, getCats, getBirds, firstPromise, secondPromise } = require('./utils/utilPromises');
 
 /**
  * Task-1: Create a promise with the resolve state
@@ -14,7 +8,7 @@ const {
  */
 
 function promiseResolve() {
-	//PLACE YOUR CODE HERE:
+  //PLACE YOUR CODE HERE:
 }
 
 /**
@@ -25,35 +19,33 @@ function promiseResolve() {
  */
 
 function promiseReject() {
-	//PLACE YOUR CODE HERE:
+  //PLACE YOUR CODE HERE:
 }
 
 /**
  * Task-3: Create a promise with both resolve and reject states
  * Should resolve when param === true with "Resolved!" string
  * Should reject when param === false with "Rejected!" string
+ * hint: use new Promise()
  */
 
 function fullPromise(param) {
-	//PLACE YOUR CODE HERE:
+  //PLACE YOUR CODE HERE:
 }
 
 /**
- * Task-4: Chain two promises (firstPromise() and secondPromise()
- * from the './utils/utilPromises' file) 
- * and store the result to the
- * variable 'chainingResult' = 'Promises chained';
+ * Task-4: Chain two promises (firstPromise() and secondPromise() from the './utils/utilPromises' file)
+ * and store the result to the variable 'chainingResult' = 'Promises chained';
  * Please do the chaining inside of the promisesChaining function (please do NOT use async/await)
  */
 
 function promisesChaining() {
-	let chainingResult = '';
+  let chainingResult = '';
 
-	//PLACE YOUR CODE BETWEEN THIS LINE:
+  //PLACE YOUR CODE BETWEEN THIS LINE:
 
-	//AND THIS ONE
+  //AND THIS ONE
 }
-
 
 /**
  * Task-5: Implement a function getAnimals() that will return the result of
@@ -65,15 +57,14 @@ function promisesChaining() {
  */
 
 function getAnimals() {
-	//PLACE YOUR CODE BETWEEN THIS LINE:
-
-	//AND THIS ONE
+  //PLACE YOUR CODE BETWEEN THIS LINE:
+  //AND THIS ONE
 }
 
 module.exports = {
-	promiseResolve,
-	promiseReject,
-	fullPromise,
-	getAnimals,
-	promisesChaining
+  promiseResolve,
+  promiseReject,
+  fullPromise,
+  getAnimals,
+  promisesChaining,
 };

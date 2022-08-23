@@ -52,15 +52,15 @@ function isAnyFishPerson(chars) {}
  * console.log(minItem([2,5,6,3,1,8])) // 4
  */
 function minItem(arr) {
-	//PLACE YOUR CODE HERE
+  //PLACE YOUR CODE HERE
 }
 
 module.exports = {
-	getCharactersNames,
-	printCharacterNames,
-	getNonHumanCharacters,
-	getJerryInfo,
-	isAllHuman,
-	isAnyFishPerson,
-	minItem
+  getCharactersNames,
+  printCharacterNames,
+  getNonHumanCharacters,
+  getJerryInfo,
+  isAllHuman,
+  isAnyFishPerson,
+  minItem,
 };

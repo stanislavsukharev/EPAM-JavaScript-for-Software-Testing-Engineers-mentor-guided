@@ -1,6 +1,6 @@
 /**
  * Organize a Page Object-like structure.
- * Page object definition: 
+ * Page object definition:
  * - https://martinfowler.com/bliki/PageObject.html
  * - https://webdriver.io/docs/pageobjects/
  * - https://javascript.info/class-inheritance
@@ -12,27 +12,21 @@
  * and return the string: "Open this ${this.url}/${pageName}"
  * 5. Login page should have open() method that will call the parent's open() method passing
  * 'this.name' as a parameter
- * 6. Component class should accept one argument 'type' 
- * (will recieve values such as 'footer' and 'header')
+ * 6. Component class should accept one argument 'type'
+ * (will receive values such as 'footer' and 'header')
  * 7. BasePage should have getters footer() and header() that will return new Component's
  * passing 'footer' and 'header' appropriately
  * 8. Component should have review() method that will return the string "I can review ${this.type}"
  */
 
-class BasePage {
+class BasePage {}
 
-}
+class LoginPage {}
 
-class LoginPage {
-
-}
-
-class Component {
-
-}
+class Component {}
 
 module.exports = {
-	BasePage,
-	LoginPage,
-	Component
+  BasePage,
+  LoginPage,
+  Component,
 };

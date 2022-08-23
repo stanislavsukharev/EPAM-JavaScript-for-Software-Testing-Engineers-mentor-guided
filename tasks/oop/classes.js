@@ -1,5 +1,5 @@
 /**
- * JS Classes: 
+ * JS Classes:
  * - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
  * - https://javascript.info/class
  * - https://javascript.info/class-inheritance
@@ -22,6 +22,6 @@ const person = ''; //create instance of class person
 const student = ''; //create instance of class student
 
 module.exports = {
-    person,
-    student
+  person,
+  student,
 };

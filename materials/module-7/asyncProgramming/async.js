@@ -3,9 +3,7 @@
  */
 const promiseResolve = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Resolved!!");
-    }, 3000);
+    setTimeout(() => resolve('Resolved!!'), 3000);
   });
 };
 
@@ -20,9 +18,7 @@ funcToResolve();
  */
 const promiseReject = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      reject("Rejected!!");
-    }, 2000);
+    setTimeout(() => reject('Rejected!!'), 2000);
   });
 };
 

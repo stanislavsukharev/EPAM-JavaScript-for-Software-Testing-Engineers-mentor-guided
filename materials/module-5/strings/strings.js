@@ -1,8 +1,8 @@
 /**
  * get a character from the string
  */
-let str = 'string';
-console.log('The first character is: ' + str.charAt(0)); 
+let str = 'string';
+console.log('The first character is: ' + str.charAt(0));
 console.log('The first character is: ' + str[0]);
 
 /**
@@ -28,7 +28,7 @@ console.log(trimMe.trim()); // 'string'
  */
 let sliceMe = 'My new string';
 console.log('3rd word is ' + sliceMe.slice(7)); // 'string'
-console.log('1st word is ' + sliceMe.slice(0,3)); // 'My'
+console.log('1st word is ' + sliceMe.slice(0, 3)); // 'My'
 
 /**
  * Convert to Upper/Lower case
@@ -44,8 +44,8 @@ let firstName = 'John';
 let lastName = 'Doe';
 let age = 25;
 
-console.log(firstName + " " + lastName + " is " + age + " years old"); // "John Doe is 25 years old"
-console.log(`${firstName} ${lastName } is ${age} years old`); // "John Doe is 25 years old"
+console.log(firstName + ' ' + lastName + ' is ' + age + ' years old'); // "John Doe is 25 years old"
+console.log(`${firstName} ${lastName} is ${age} years old`); // "John Doe is 25 years old"
 
 /**
  * Regexp
@@ -55,4 +55,4 @@ const found = paragraph.match(/[A-Z]/g);
 const foundLetter = paragraph.match(/q/g);
 
 console.log(found); // ["T", "I"]
-console.log(foundLetter ); // ["q"]
+console.log(foundLetter); // ["q"]

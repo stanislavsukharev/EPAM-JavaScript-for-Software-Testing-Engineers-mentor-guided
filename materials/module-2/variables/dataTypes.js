@@ -13,7 +13,7 @@ let sym = Symbol();
  */
 const first = 'Hello';
 const second = 'World';
-const result = first + " " + second;
+const result = first + ' ' + second;
 
 /**
  * Number
@@ -31,6 +31,6 @@ let falseValue = false;
  * Objects
  */
 const obj = {
-  key: 'value'
+  key: 'value',
 };
 const arr = [1, 2, '1', '2'];

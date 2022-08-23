@@ -1,9 +1,9 @@
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
+
 const vars = require('../variables');
 
 describe('Task 2 - Variables and Data Types', () => {
-
   it('int variable should be created', () => {
     expect(vars.int).to.equal(1);
   });
@@ -25,7 +25,7 @@ describe('Task 2 - Variables and Data Types', () => {
   });
 
   it('arr variable should be created', () => {
-    const expected = [1,2,3,4,5];
+    const expected = [1, 2, 3, 4, 5];
 
     expect(Array.isArray(vars.arr)).to.equal(true);
     expect(vars.arr, 'arr variable is not equal to [1,2,3,4,5]').to.deep.equal(expected);
@@ -41,5 +41,4 @@ describe('Task 2 - Variables and Data Types', () => {
     expect(vars.human.lastName).to.equal('Dou');
     expect(vars.human.fullName).to.equal('John Dou');
   });
-
 });

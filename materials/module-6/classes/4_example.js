@@ -20,7 +20,6 @@ class Component {
   reviewComponent() {
     return `This is ${this.name} component`;
   }
-
 }
 
 class Footer extends Component {
@@ -34,20 +33,17 @@ class Footer extends Component {
 }
 
 class Header extends Component {
-
   constructor(name) {
     super(name);
   }
-
 }
 
 class LoginPage extends Page {
-
   open() {
     return super.open('/login');
   }
 
-  get emailField(){
+  get emailField() {
     return 'emailField';
   }
 

@@ -13,9 +13,8 @@ while (num < 55) {
  */
 do {
   console.log(num);
-  num++; 
-} 
-while (num < 45);
+  num++;
+} while (num < 45);
 
 /**
  * for loop
@@ -28,18 +27,18 @@ for (let i = 0; i < 8; i++) {
  * Breaking the FOR loop
  */
 for (let i = 0; i < 8; i++) {
-  if (i == 6) {
-      break;
-  }     
-  console.log(i); 
+  if (i === 6) {
+    break;
+  }
+  console.log(i);
 }
 
 /**
  * Continue FOR loop
  */
 for (let i = 0; i < 8; i++) {
-  if (i == 6) {
-      continue;
-  }     
-  console.log(i); 
+  if (i === 6) {
+    continue;
+  }
+  console.log(i);
 }

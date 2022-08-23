@@ -1,4 +1,4 @@
-if (2 * 4 == 8) {
+if (2 * 4 === 8) {
   console.log('That is right!');
 } else {
   console.log('Wrong!');
@@ -18,7 +18,7 @@ if (num < 49) {
  * Ternary operator
  */
 
-let result = (num == 50) ? 'That is right!' : 'Wrong!';
+let result = num === 50 ? 'That is right!' : 'Wrong!';
 console.log(result); // result will store 'That is right value'
 
 /**
@@ -39,14 +39,14 @@ switch (num) {
     break;
 }
 
-const os = require("os");
-const WIN = "win32";
-const LINUX = "linux";
+const os = require('os');
+const WIN = 'win32';
+const LINUX = 'linux';
 
 if (os.platform() === WIN) {
-  console.log("script.bat");
+  console.log('script.bat');
 } else if (os.platform() === LINUX) {
-  console.log("script.sh");
+  console.log('script.sh');
 } else {
-  console.log("no appropriate script");
+  console.log('no appropriate script');
 }

@@ -17,7 +17,7 @@ const student = ''; //put you object here
 const student2 = ''; //put you object here
 
 module.exports = {
-	person,
-	student,
-	student2
+  person,
+  student,
+  student2,
 };

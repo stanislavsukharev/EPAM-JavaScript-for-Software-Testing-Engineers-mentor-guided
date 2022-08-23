@@ -4,9 +4,9 @@
 let num = 10;
 
 function showAnotherMessage(text) {
-    let num = 1;
-    console.log(num);
-    console.log(text);
+  let num = 1;
+  console.log(num);
+  console.log(text);
 }
 
 showAnotherMessage('hello!!'); // 1; 'Hello'

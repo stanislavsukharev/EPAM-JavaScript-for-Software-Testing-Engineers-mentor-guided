@@ -1,4 +1,4 @@
-const arr = [1,2,3,4,5];
+const arr = [1, 2, 3, 4, 5];
 
 /**
  * Get a length of an array
@@ -33,8 +33,8 @@ console.log(arr);
 /**
  * join() method
  */
-const fruits = ['Apple','Banana','Orange'];
-let  str = fruits.join('-');
+const fruits = ['Apple', 'Banana', 'Orange'];
+let str = fruits.join('-');
 
 console.log(str);
 str = str.split('-');
@@ -55,15 +55,15 @@ console.log(fruits.includes('Lime'));
 /**
  * sort() method
  */
-const sortMe = ['ddd','aaa','ccc','bbb'];
+const sortMe = ['ddd', 'aaa', 'ccc', 'bbb'];
 sortMe.sort();
 
 console.log(sortMe);
 
-const numArr = [1,4,3,15];
+const numArr = [1, 4, 3, 15];
 console.log(numArr.sort());
 
-const sortNum = (a,b) => a - b;
+const sortNum = (a, b) => a - b;
 console.log(numArr.sort(sortNum));
 
 /**
@@ -75,7 +75,7 @@ console.log(arr2);
 /**
  * filter() method
  */
-const arr3 = arr.filter(el => (el > 2) && (el < 5));
+const arr3 = arr.filter(el => el > 2 && el < 5);
 console.log(arr3);
 
 /**
@@ -92,11 +92,11 @@ console.log(arr.some(isBigEnough));
 /**
  * slice() method
  */
-const animals = ['cat','dog','horse','pig','sheep'];
-let arr1 = animals .slice(2);
+const animals = ['cat', 'dog', 'horse', 'pig', 'sheep'];
+let arr1 = animals.slice(2);
 
-console.log(arr1); 
-arr1 = animals .slice(1,3);
+console.log(arr1);
+arr1 = animals.slice(1, 3);
 console.log(arr1);
 
 /**
@@ -113,7 +113,7 @@ console.log(months); // ["Jan", "Feb", "March", "April", "May"];
 /**
  * reverse() method
  */
-const reverseMe = ['aaa','bbb','ccc','ddd'];
+const reverseMe = ['aaa', 'bbb', 'ccc', 'ddd'];
 let reversed = reverseMe.reverse();
 
 console.log(reversed); // ['ddd','ccc','bbb','aaa'];

@@ -1,25 +1,18 @@
-const {
-  promiseResolve,
-  promiseReject
-} = require('./promises');
-const {
-  getDogs,
-  getCats,
-  getBirds
-} = require("./utils/utilPromises");
+const { promiseResolve, promiseReject } = require('./promises');
+const { getDogs, getCats, getBirds } = require('./utils/utilPromises');
 /**
- * Materials: 
+ * Materials:
  * - https://javascript.info/async-await
  * - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
- * 
+ *
  */
 
 /**
  * TASK-1: Resolve the created earlier promiseResolve() promise
- * using async/await syntax inside the asyncPromiseResolve function 
+ * using async/await syntax inside the asyncPromiseResolve function
  * and modify the message to -> Resolved! with async await
  * @returns {Promise<"Resolved! with async await">}
- * 
+ *
  */
 async function asyncPromiseResolve() {
   //PLACE YOUR CODE HERE:
@@ -36,10 +29,11 @@ async function asyncPromiseReject() {
 }
 
 /**
- * TASK-3: Return the result of 3 promises: 
+ * TASK-3: Return the result of 3 promises:
  * getDogs(), getCats() and getBirds() from the './utils/utilPromises' file
  * using async/await syntax
- * @returns 
+ * Promise.all - isn't allowed to use
+ * @returns
  */
 async function asyncPromiseAll() {
   //PLACE YOUR CODE HERE:
@@ -48,5 +42,5 @@ async function asyncPromiseAll() {
 module.exports = {
   asyncPromiseResolve,
   asyncPromiseReject,
-  asyncPromiseAll
+  asyncPromiseAll,
 };

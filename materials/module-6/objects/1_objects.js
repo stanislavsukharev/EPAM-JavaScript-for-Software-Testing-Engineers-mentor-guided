@@ -8,8 +8,8 @@ const options = {
   isModified: true,
   additionalOptions: {
     backgroundColor: 'blue',
-    size: '12px'
-  }
+    size: '12px',
+  },
 };
 
 /**
@@ -20,21 +20,17 @@ const options = {
  * getting the property by creating a variable
  */
 
-
 /**
  * adding a property
  */
-
 
 /**
  * Add another object to an existing object
  */
 
-
 /**
  * delete the listed property from the object
  */
-
 
 /**
  * for..in

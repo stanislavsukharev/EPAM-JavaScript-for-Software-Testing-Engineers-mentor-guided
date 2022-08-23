@@ -1,5 +1,5 @@
 /**
- * A closure is the combination of a function bundled together (enclosed) 
+ * A closure is the combination of a function bundled together (enclosed)
  * with references to its surrounding state (the lexical environment).
  */
 
@@ -8,7 +8,7 @@
  */
 function makeCounter() {
   let count = 0;
-  return function() {
+  return function () {
     return ++count;
   };
 }
@@ -16,13 +16,12 @@ function makeCounter() {
 const counter = makeCounter();
 console.log(counter());
 
-
 /**
  * Pulse calculation example
  */
 
 function calculatePulse(pulse) {
-  return function(age) {
+  return function (age) {
     return (pulse - age) * 0.7;
   };
 }

@@ -2,7 +2,6 @@
 let x = 42;
 // console.log('x =', x);
 
-
 //arithmetic
 let add = x + 4;
 // console.log('sum =', add);
@@ -46,7 +45,6 @@ value4 /= INCREMENT_VALUE;
 value5 %= INCREMENT_VALUE;
 //console.log('value5 =', value5);
 
-
 //string
 let java = 'java';
 let script = 'script';
@@ -55,7 +53,6 @@ let js1 = java + script;
 // console.log('js1 =', js1);
 java += '10';
 //console.log('java =', java);
-
 
 //comparison
 let eq1 = 5 == 5;
@@ -96,7 +93,7 @@ let and = statement1 && statement2;
 // console.log('and =', and);
 
 // typeof
-let str = typeof "John";
+let str = typeof 'John';
 let nmb = typeof 3.14;
 let bool = typeof false;
 // console.log('str =', str);
