@@ -10,7 +10,11 @@ describe('Promises', () => {
   });
 
   it('TASK-2: should create a promise that will be rejected', async () => {
-    return promiseReject().catch(result => expect(result).to.equal('Rejected!'));
+    try {
+      expect(await promiseReject(), 'You promise is not rejected').not.to.equal('Rejected!');
+    } catch (e) {
+      expect(e).to.equal('Rejected!');
+    }
   });
 
   it('TASK-3: should resolve or reject the promise considering the input parameter', async () => {

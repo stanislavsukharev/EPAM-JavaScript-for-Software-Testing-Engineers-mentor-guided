@@ -6,7 +6,7 @@
  * 		async/await: https://javascript.info/async-await
  * 		async/await: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
  *
- * 2. Save the payload of the response to "./response.json" file with only items which id less than 20.
+ * 2. Save the payload of the response to "./response.json" (to the current directory!) file with only items which id less than 20.
  * Use the promisified version of FS module.
  * DOCS:
  * 		fs.writeFile: https://nodejs.org/docs/latest-v16.x/api/fs.html#fspromiseswritefilefile-data-options
