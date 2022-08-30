@@ -37,6 +37,12 @@ describe('student', () => {
   it('should have getFullName method', () => {
     expect(student.getFullName()).to.equal(`${student.firstName} ${student.lastName}`);
   });
+
+  it('should have person as prototype', () => {
+    const prototype = Object.getPrototypeOf(student);
+    expect(prototype, `object "person" is not prototype of "student"`).to.equal(person);
+  });
+
 });
 
 describe('student2', () => {
