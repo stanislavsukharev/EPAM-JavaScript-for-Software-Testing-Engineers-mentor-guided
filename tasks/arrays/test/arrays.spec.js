@@ -52,6 +52,19 @@ describe('isAllHuman', () => {
   it('should false if any non-human', () => {
     expect(isAllHuman(chars)).to.equal(false);
   });
+
+  it('should true if all human', () => {
+    const chars = [
+      {
+        species: 'Human'
+      },
+      {
+        species: 'Human'
+      },
+    ]
+    const actual = isAllHuman(chars);
+    expect(actual).to.equal(true);
+  });
 });
 
 describe('isAnyFishPerson', () => {
