@@ -42,7 +42,6 @@ describe('student', () => {
     const prototype = Object.getPrototypeOf(student);
     expect(prototype, `object "person" is not prototype of "student"`).to.equal(person);
   });
-
 });
 
 describe('student2', () => {

@@ -8,6 +8,6 @@ describe('Intro', () => {
   });
 
   it('package should have 3 authors', () => {
-    expect(package.authors).to.have.length(3);
+    expect(package.authors, 'New author is not found').to.have.length(3);
   });
 });
