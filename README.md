@@ -52,94 +52,90 @@ npm run test:${module_name}
 7. Install the dependencies: run 'npm install'
 8. Check that everything is correct: 'npm run test:intro'
 9. Create a branch
-10. Add you Name and Lastname to the package.json file
-11. Prepare the merge request and share the link with your mentor
+10. Add your email to the package.json file (to the authors section)
 
 <a name="module_2"/>
 
 #### Module 2: Variables and data types
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/variables/variables.js" file.
+2. Do the tasks from "./tasks/module-2/variables.js" file.
 3. To check yourself please use the script: npm run test:variables.
 4. Create a pull request with the done tasks.
-5. Send the link to the pull request to your mentor.
 
 <a name="module_3"/>
 
 #### Module 3: Conditions and loops
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/condition/condition.js" file.
-3. Do the tasks from "./tasks/cycles/cycles.js" file.
+2. Do the tasks from "./tasks/module-3/condition.js" file.
+3. Do the tasks from "./tasks/module-3/cycles.js" file.
 4. To check the 1st part please use the script: npm run test:condition.
 5. To check the 2nd part please use the script: npm run test:cycles.
 6. Create a pull request with the done tasks.
-7. Send the link to the pull request to your mentor.
 
 <a name="module_4"/>
 
 #### Module 4: JavaScript functions
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/functions/functions.js" file.
+2. Do the tasks from "./tasks/module-4/functions.js" file.
 3. To check yourself please use the script: npm run test:functions.
 4. Create a pull request with the done tasks.
-5. Send the link to the pull request to your mentor.
 
 <a name="module_5"/>
 
 #### Module 5: Strings and arrays
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/strings/strings.js" file.
-3. Do the tasks from "./tasks/arrays/arrays.js" file.
+2. Do the tasks from "./tasks/module-5/strings.js" file.
+3. Do the tasks from "./tasks/module-5/arrays.js" file.
 4. To check the 1st part please use the script: npm run test:strings.
 5. To check the 2nd part please use the script: npm run test:arrays.
 6. Create a pull request with the done tasks.
-7. Send the link to the pull request to your mentor.
 
 <a name="module_6"/>
 
 #### Module 6: Objects, classes, and OOP
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/oop/objects.js" file.
-3. Do the tasks from "./tasks/oop/classes.js" file.
-4. Do the tasks from "./tasks/oop/pageObject.js" file.
+2. Do the tasks from "./tasks/module-6/objects.js" file.
+3. Do the tasks from "./tasks/module-6/classes.js" file.
+4. Do the tasks from "./tasks/module-6/pageObject.js" file.
 5. To check the 1st part please use the script: npm run test:objects.
 6. To check the 2nd part please use the script: npm run test:classes.
 7. To check the 3rd please use the script: npm run test:po.
 8. Create a pull request with the done tasks.
-9. Send the link to the pull request to your mentor.
 
 <a name="module_7"/>
 
 #### Module 7: Async programming
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/async/promises.js" file.
-3. Do the tasks from "./tasks/async/asyncAwait.js" file.
+2. Do the tasks from "./tasks/module-7/promises.js" file.
+3. Do the tasks from "./tasks/module-7/asyncAwait.js" file.
 4. To check yourself please use the script: npm run test:async.
 5. Create a pull request with the done tasks.
-6. Send the link to the pull request to your mentor.
 
 <a name="module_8"/>
 
 #### Module 8: NodeJS infrastructure
 
 1. Create a new branch.
-2. Do the tasks from "./tasks/nodeJs/fetch/fetch.js" file.
-3. Do the tasks from "./tasks/nodeJs/parser/parser.js" file.
+2. Do the tasks from "./tasks/module-8/fetch/fetch.js" file.
+3. Do the tasks from "./tasks/module-8/parser/parser.js" file.
 4. To check yourself please use the script: npm run test:nodejs.
 5. Create a pull request with the done tasks.
-6. Send the link to the pull request to your mentor.
 
 <a name="contacts"/>
 
 ## Contact list
 
-For all questions please contact Dzmitry_Shaplyka@epam.com or Oleksandr_Halichenko@epam.com
+In case of any questions please contact:
+
+- Dzmitry_Shaplyka@epam.com
+- Oleksandr_Halichenko@epam.com
+- Andrei_Dzeichyk@epam.com
 
 <a name="license"/>
 

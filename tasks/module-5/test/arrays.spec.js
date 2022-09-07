@@ -2,7 +2,7 @@ const { describe, it } = require('mocha');
 const { expect } = require('chai');
 const sinon = require('sinon');
 
-const chars = require('../characters.json');
+const chars = require('../data/characters.json');
 const {
   getCharactersNames,
   printCharacterNames,
@@ -56,12 +56,12 @@ describe('isAllHuman', () => {
   it('should true if all human', () => {
     const chars = [
       {
-        species: 'Human'
+        species: 'Human',
       },
       {
-        species: 'Human'
+        species: 'Human',
       },
-    ]
+    ];
     const actual = isAllHuman(chars);
     expect(actual).to.equal(true);
   });

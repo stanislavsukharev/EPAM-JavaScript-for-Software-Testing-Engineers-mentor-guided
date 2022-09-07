@@ -1,9 +1,11 @@
 /**
+ * As a representaion of Chars array please use our sample: ./data/characters.json
  * return an array of characters names
  * Avoid using forEach() method and for|for..of loops
  * @param {Array} chars
  * @return {Array} - char names
  */
+
 function getCharactersNames(chars) {}
 
 /**
@@ -13,7 +15,7 @@ function getCharactersNames(chars) {}
 function printCharacterNames(chars) {}
 
 /**
- * return an array of non-human (species !== 'human') characters
+ * return an array of non-human (species !== 'Human') characters
  * Avoid using forEach() method and for|for..of loops
  * @param {Array} chars
  * @return {Array} - non human characters
