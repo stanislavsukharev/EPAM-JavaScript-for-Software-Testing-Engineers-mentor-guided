@@ -1,6 +1,6 @@
 /**
- * 1. You need to write a parser, which takes the "./test.json" file
- * and will create a new JSON file with the name "./parsed.json" with the structure:
+ * 1. You need to write a parser, which takes the "./utils/test.json" file
+ * and will create a new JSON file with the name "./parsed.json" (in current directory!) with the structure:
  * [
  *  {
  *    "docId": "http://doc.epam.com/077b1523-56f0-492a-b954-1269e3acc191"

@@ -2,8 +2,8 @@ const { describe, it } = require('mocha');
 const { expect } = require('chai');
 
 const { cleanUpArtifacts } = require('../utils');
-const { jsonParser } = require('../parser/parser');
-const { sendRequest } = require('../fetch/fetch');
+const { jsonParser } = require('../parser');
+const { sendRequest } = require('../fetch');
 
 describe('Fetch method', () => {
   let responseJson;
@@ -14,7 +14,7 @@ describe('Fetch method', () => {
   });
 
   beforeEach(() => {
-    responseJson = require('../fetch/response.json');
+    responseJson = require('../response.json');
   });
 
   it('should receive items', () => {
