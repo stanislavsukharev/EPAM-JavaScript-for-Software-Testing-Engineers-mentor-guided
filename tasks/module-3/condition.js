@@ -41,7 +41,7 @@ function calc(operator, alpha, beta) {
 /**
  * Task: 3
  * Write the logic that will calculate the amount of discount
- * considering the 'redemption' amount
+ * considering the 'ransom' amount
  * Rules are the following:
  * - 0    - 350:  0
  * - 351  - 1350: 15
@@ -50,7 +50,7 @@ function calc(operator, alpha, beta) {
  * assign the result to the 'discount' variable
  */
 
-function calculateDiscount(redemption) {
+function calculateDiscount(ransom) {
   let discount;
   //PLACE YOUR CODE BETWEEN THIS LINE:
 
