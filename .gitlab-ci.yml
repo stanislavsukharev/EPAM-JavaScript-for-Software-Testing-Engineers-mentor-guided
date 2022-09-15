@@ -1,0 +1,18 @@
+stages:
+  - test
+
+image: node:16
+
+unit-test:
+  stage: test
+  before_script:
+    - npm ci
+  script:
+    - node ./.dofiles/run-unittests.js
+
+lint:
+  stage: test
+  before_script:
+    - npm ci
+  script:
+    - npx prettier -c .
