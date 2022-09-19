@@ -1,5 +1,5 @@
 /**
- * As a representaion of Chars array please use our sample: ./data/characters.json
+ * As a representation of Chars array please use our sample: ./data/characters.json
  * return an array of characters names
  * Avoid using forEach() method and for|for..of loops
  * @param {Array} chars
@@ -47,7 +47,7 @@ function isAllHuman(chars) {}
 function isAnyFishPerson(chars) {}
 
 /**
- * 1. Write a method to find an index of minimal item from an array;
+ * write a method to find an index of minimal item from an array;
  * @param {Array} arr
  * @return {number} - minimum element index
  * @example
