@@ -40,7 +40,7 @@ function strCount(str, char) {}
  * than the given maximum length and add "..." to the end.
  * Keep it as is if it is not that long.
  * @param {string} str - the initial string
- * @param {num} num - by wht amount of chars it should be truncated
+ * @param {num} num - by what amount of chars it should be truncated
  * @return {string} truncated or the initial string
  * @example
  * console.log(truncateString('This is a long string', 6)) // 'This i...'
