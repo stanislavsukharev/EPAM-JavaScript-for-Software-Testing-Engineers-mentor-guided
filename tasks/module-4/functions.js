@@ -9,7 +9,9 @@
  * write function that will do sum for two numbers
  *
  */
-function sum(a, b) {}
+function sum(a, b) {
+  return a + b;
+}
 
 /**
  * write function that returns firstName and lastName of a given object
@@ -18,27 +20,44 @@ function sum(a, b) {}
  *    lastName: "Dou"
  * }
  */
-function getFullName(object) {}
+function getFullName(object) {
+  return `${object.firstName} ${object.lastName}`;
+}
 
 /**
  * write function that checks if number is odd
  * true if odd, false if even
  */
-function isOdd(n) {}
+function isOdd(n) {
+  return n % 2 !== 0;
+}
 
 /**
  * write function that returns shortest of the words in the given array
  * @example
  * console.log(getShortest(["one", "two", "three"])) // one
  */
-function getShortest(wordArray) {}
+
+function getShortest(wordArray) {
+  let shortestWord = wordArray[0];
+  for (let i = 1; i < wordArray.length; i++) {
+    if (shortestWord.length > wordArray[i].length) {
+      shortestWord = wordArray[i];
+    }
+  }
+  return shortestWord;
+}
 
 /**
  * write function that returns word google with given numbers of "o" symbols
  * @example
  * console.log(getGoogle(5)) // gooooogle
  */
-function getGoogle(n) {}
+function getGoogle(n) {
+  let letter = 'o';
+  let word = 'g' + letter.repeat(n) + 'gle';
+  return word;
+}
 
 /**
  * write function that returns object based on the given information
@@ -51,15 +70,25 @@ function getGoogle(n) {}
  *    age: 42
  * }
  */
-function getUser(firstName, lastName, age) {}
+function getUser(firstName = null, lastName = null, age = null) {
+  return { firstName, lastName, age };
+}
 
 /**
  * write function that calculates total path traveled.
  * path represented as array of objects with field distance and direction
  * e.g [{direction: "Kiyv - Minsk", distance: 567}, {direction: "Kiyv - Paris", distance: 2402}]
  */
+const path = [];
 
-function getTotalPath(path) {}
+function getTotalPath(path) {
+  let sum = 0;
+
+  for (let el of path) {
+    sum += el.distance;
+  }
+  return sum;
+}
 
 /**
  * write a function that calculates a final price considering the Amount
@@ -74,7 +103,9 @@ function getTotalPath(path) {}
  */
 
 function discountFunction(percentage) {
-  return function (amount) {};
+  return function (amount) {
+    return amount - (amount / 100) * percentage;
+  };
 }
 
 /**
@@ -90,10 +121,13 @@ const myObject = {
   age: 25,
   friends: ['Mike', 'Alan', 'Daniel'],
   keys() {
-    //write your code here
+    for (let key in myObject) {
+      console.log(key);
+    }
   },
   call() {
-    //write your code here
+    let str = `My name is ${myObject.name} ${myObject.lastName} and I am ${myObject.age} years old. My best friend is ${myObject.friends[2]}`;
+    return str;
   },
 };
 
