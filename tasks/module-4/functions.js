@@ -71,7 +71,6 @@ function getGoogle(n) {
  * }
  */
 function getUser(firstName = null, lastName = null, age = null) {
-  console.log('firstName:', firstName, 'lastName:', lastName, 'age:', age);
   return { firstName, lastName, age };
 }
 
