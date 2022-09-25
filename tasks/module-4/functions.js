@@ -21,7 +21,7 @@ function sum(a, b) {
  * }
  */
 function getFullName(object) {
-  return object.firstName + ' ' + object.lastName;
+  return `${object.firstName} ${object.lastName}`;
 }
 
 /**
@@ -29,11 +29,7 @@ function getFullName(object) {
  * true if odd, false if even
  */
 function isOdd(n) {
-  if (n % 2 == 0) {
-    return false;
-  } else {
-    return true;
-  }
+  return n % 2 !== 0;
 }
 
 /**
@@ -41,14 +37,16 @@ function isOdd(n) {
  * @example
  * console.log(getShortest(["one", "two", "three"])) // one
  */
+
 function getShortest(wordArray) {
   let shortestWord = wordArray[0];
   for (let i = 1; i < wordArray.length; i++) {
-    shortestWord.length > wordArray[i].length && (shortestWord = wordArray[i]);
+    if (shortestWord.length > wordArray[i].length) {
+      shortestWord = wordArray[i];
+    }
   }
   return shortestWord;
 }
-console.log(getShortest(['one', 'two', 'three']));
 
 /**
  * write function that returns word google with given numbers of "o" symbols
@@ -90,10 +88,9 @@ function getTotalPath(path) {
   for (let el of path) {
     sum += el.distance;
   }
-  // console.log(sum);
   return sum;
 }
-console.log(getTotalPath(path));
+
 /**
  * write a function that calculates a final price considering the Amount
  * reduced by discount percentage(hint: you need to use the Closure here)
@@ -127,25 +124,11 @@ const myObject = {
   keys() {
     for (let key in myObject) {
       console.log(key);
-    } //write your code here
+    }
   },
   call() {
-    let str =
-      'My name is' +
-      ' ' +
-      myObject.name +
-      ' ' +
-      myObject.lastName +
-      ' ' +
-      'and I am' +
-      ' ' +
-      myObject.age +
-      ' ' +
-      'years old. My best friend is' +
-      ' ' +
-      myObject.friends[2];
+    let str = `My name is ${myObject.name} ${myObject.lastName} and I am ${myObject.age} years old. My best friend is ${myObject.friends[2]}`;
     return str;
-    //write your code here
   },
 };
 
