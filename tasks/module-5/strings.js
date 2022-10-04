@@ -1,3 +1,5 @@
+const { domainToUnicode } = require('url');
+
 /**
  * 1. Write a method to reverse a string;
  * 2. The method should return the string 'This is not a string!' if trying to pass a number
