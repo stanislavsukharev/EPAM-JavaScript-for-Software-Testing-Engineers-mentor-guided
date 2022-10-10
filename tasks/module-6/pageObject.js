@@ -18,9 +18,6 @@
  * passing 'footer' and 'header' appropriately
  * 8. Component should have review() method that will return the string "I can review ${this.type}"
  */
-
-const { basename } = require('path');
-
 class BasePage {
   constructor(url) {
     this.url = url;

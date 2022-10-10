@@ -36,8 +36,8 @@ class Student extends Person {
   }
 }
 
-const person = new Person();
-const student = new Student(); //create instance of class student
+const person = new Person('', '');
+const student = new Student('', '', ''); //create instance of class student
 
 module.exports = {
   person,
