@@ -18,12 +18,41 @@
  * passing 'footer' and 'header' appropriately
  * 8. Component should have review() method that will return the string "I can review ${this.type}"
  */
+class BasePage {
+  constructor(url) {
+    this.url = url;
+  }
+  open(pageName) {
+    return `Open this ${this.url}/${pageName}`;
+  }
 
-class BasePage {}
+  get footer() {
+    return new Component('footer');
+  }
+  get header() {
+    return new Component('header');
+  }
+}
 
-class LoginPage {}
+class LoginPage extends BasePage {
+  constructor(url, name) {
+    super(url);
+    this.name = name;
+  }
+  open() {
+    return super.open(this.name);
+  }
+}
 
-class Component {}
+class Component {
+  constructor(type) {
+    this.type = type;
+  }
+
+  review() {
+    return `I can review ${this.type}`;
+  }
+}
 
 module.exports = {
   BasePage,
