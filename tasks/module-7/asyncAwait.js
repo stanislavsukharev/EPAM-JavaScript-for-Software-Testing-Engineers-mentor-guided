@@ -14,8 +14,15 @@ const { getDogs, getCats, getBirds } = require('./utils/utilPromises');
  * @returns {Promise<"Resolved! with async await">}
  *
  */
+// async function asyncPromiseResolve() {
+//   //PLACE YOUR CODE HERE:
+//   return new Promise((resolve, reject) => {
+//     resolve('Resolved! with async await');
+//   });
+// }
+
 async function asyncPromiseResolve() {
-  //PLACE YOUR CODE HERE:
+  return Promise.resolve('Resolved! with async await');
 }
 
 /**
@@ -26,6 +33,8 @@ async function asyncPromiseResolve() {
  */
 async function asyncPromiseReject() {
   //PLACE YOUR CODE HERE:
+  if (Promise.reject);
+  return 'Rejected! with async await';
 }
 
 /**
@@ -36,7 +45,25 @@ async function asyncPromiseReject() {
  * @returns
  */
 async function asyncPromiseAll() {
-  //PLACE YOUR CODE HERE:
+  // PLACE YOUR CODE HERE:
+  function getDogs() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('dogs'), 50);
+    });
+  }
+
+  function getCats() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('cats'), 100);
+    });
+  }
+
+  function getBirds() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('birds'), 500);
+    });
+  }
+  //AND THIS ONE
 }
 
 module.exports = {

@@ -1,3 +1,4 @@
+const { resolve } = require('path');
 const { getDogs, getCats, getBirds, firstPromise, secondPromise } = require('./utils/utilPromises');
 
 /**
@@ -7,8 +8,13 @@ const { getDogs, getCats, getBirds, firstPromise, secondPromise } = require('./u
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve
  */
 
+// function promiseResolve() {
+//   return new Promise((resolve, reject) => {
+//     resolve('Resolved!');
+//   });
+// }
 function promiseResolve() {
-  //PLACE YOUR CODE HERE:
+  return Promise.resolve('Resolved!');
 }
 
 /**
@@ -18,8 +24,15 @@ function promiseResolve() {
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject
  */
 
+// function promiseReject() {
+//   //PLACE YOUR CODE HERE:
+//   return new Promise((resolve, reject) => {
+//     reject('Rejected!');
+//   });
+// }
+
 function promiseReject() {
-  //PLACE YOUR CODE HERE:
+  return Promise.reject('Rejected!');
 }
 
 /**
@@ -31,6 +44,13 @@ function promiseReject() {
 
 function fullPromise(param) {
   //PLACE YOUR CODE HERE:
+  return new Promise((resolve, reject) => {
+    if (param) {
+      resolve('Resolved!');
+    } else {
+      reject('Rejected!');
+    }
+  });
 }
 
 /**
@@ -43,7 +63,24 @@ function promisesChaining() {
   let chainingResult = '';
 
   //PLACE YOUR CODE BETWEEN THIS LINE:
+  function firstPromise() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('Promises'), 50);
+    });
+  }
 
+  function secondPromise() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('chained'), 40);
+    });
+  }
+
+  firstPromise()
+    .then(res => {
+      console.log(res);
+      return secondPromise();
+    })
+    .then(res => console.log(res));
   //AND THIS ONE
 }
 
@@ -58,6 +95,25 @@ function promisesChaining() {
 
 function getAnimals() {
   //PLACE YOUR CODE BETWEEN THIS LINE:
+  function getDogs() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('dogs'), 50);
+    });
+  }
+
+  function getCats() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('cats'), 100);
+    });
+  }
+
+  function getBirds() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve('birds'), 500);
+    });
+  }
+  Promise.all([getDogs(), getCats(), getBirds()]).then(res => console.log(res));
+
   //AND THIS ONE
 }
 
