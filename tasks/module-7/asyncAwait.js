@@ -15,7 +15,7 @@ const { getDogs, getCats, getBirds } = require('./utils/utilPromises');
  *
  */
 async function asyncPromiseResolve() {
-  //PLACE YOUR CODE HERE:
+  return `${await promiseResolve()} with async await`;
 }
 
 /**
@@ -26,6 +26,11 @@ async function asyncPromiseResolve() {
  */
 async function asyncPromiseReject() {
   //PLACE YOUR CODE HERE:
+  try {
+    await promiseReject();
+  } catch (error) {
+    return `${error} with async await`;
+  }
 }
 
 /**
@@ -36,7 +41,9 @@ async function asyncPromiseReject() {
  * @returns
  */
 async function asyncPromiseAll() {
-  //PLACE YOUR CODE HERE:
+  // PLACE YOUR CODE HERE:
+  return [await getDogs(), await getCats(), await getBirds()];
+  //AND THIS ONE
 }
 
 module.exports = {

@@ -6,9 +6,8 @@ const { getDogs, getCats, getBirds, firstPromise, secondPromise } = require('./u
  * @returns {Promise<"Resolved!">}
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve
  */
-
 function promiseResolve() {
-  //PLACE YOUR CODE HERE:
+  return Promise.resolve('Resolved!');
 }
 
 /**
@@ -17,9 +16,8 @@ function promiseResolve() {
  * @returns {Promise<"Rejected!">}
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject
  */
-
 function promiseReject() {
-  //PLACE YOUR CODE HERE:
+  return Promise.reject('Rejected!');
 }
 
 /**
@@ -28,9 +26,15 @@ function promiseReject() {
  * Should reject when param === false with "Rejected!" string
  * hint: use new Promise()
  */
-
 function fullPromise(param) {
   //PLACE YOUR CODE HERE:
+  return new Promise((resolve, reject) => {
+    if (param) {
+      resolve('Resolved!');
+    } else {
+      reject('Rejected!');
+    }
+  });
 }
 
 /**
@@ -41,9 +45,16 @@ function fullPromise(param) {
 
 function promisesChaining() {
   let chainingResult = '';
-
   //PLACE YOUR CODE BETWEEN THIS LINE:
-
+  return firstPromise()
+    .then(value => {
+      chainingResult += `${value} `;
+      return secondPromise();
+    })
+    .then(secondPromiseValue => {
+      chainingResult += secondPromiseValue;
+      return chainingResult;
+    });
   //AND THIS ONE
 }
 
@@ -58,6 +69,7 @@ function promisesChaining() {
 
 function getAnimals() {
   //PLACE YOUR CODE BETWEEN THIS LINE:
+  return Promise.all([getDogs(), getCats(), getBirds()]);
   //AND THIS ONE
 }
 
