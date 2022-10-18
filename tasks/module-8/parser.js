@@ -25,6 +25,17 @@ const fs = require('fs/promises');
 
 const jsonParser = async () => {
   //put your code here
+  fs.readFile('./utils/test.json', 'utf-8', (err, data) => {
+    if (err) {
+      console.log(err);
+    }
+    const parsedData = JSON.parse(data);
+    fs.writeFile('./parsed.json', JSON.stringify(parsedData, null, 2), err => {
+      if (err) {
+        console.log(err);
+      }
+    });
+  });
 };
 
 module.exports = {

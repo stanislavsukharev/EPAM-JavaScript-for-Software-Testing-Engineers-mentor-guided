@@ -22,6 +22,17 @@ const fs = require('fs/promises');
  */
 const sendRequest = async () => {
   //put your code here
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'GET',
+    headers: {},
+  });
+  const json = await res.json();
+
+  const jsonResponse = fs.writeFile('./response.json', JSON.stringify(json, null, 2), err => {
+    if (err) {
+      console.log(err);
+    }
+  });
 };
 
 module.exports = {
