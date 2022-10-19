@@ -30,6 +30,8 @@ const jsonParser = async () => {
       console.log(err);
     }
     const parsedData = JSON.parse(data);
+    // task manipulations before writing
+
     fs.writeFile('./parsed.json', JSON.stringify(parsedData, null, 2), err => {
       if (err) {
         console.log(err);

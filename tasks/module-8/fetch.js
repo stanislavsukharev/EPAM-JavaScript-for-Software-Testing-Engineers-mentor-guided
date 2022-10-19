@@ -22,13 +22,12 @@ const fs = require('fs/promises');
  */
 const sendRequest = async () => {
   //put your code here
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
-    method: 'GET',
-    headers: {},
-  });
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
   const json = await res.json();
 
-  const jsonResponse = fs.writeFile('./response.json', JSON.stringify(json, null, 2), err => {
+  const jsonId = json.filter(id => id.id < 20);
+
+  await fs.writeFile('./respons.json', JSON.stringify(jsonId, null, 2), err => {
     if (err) {
       console.log(err);
     }
