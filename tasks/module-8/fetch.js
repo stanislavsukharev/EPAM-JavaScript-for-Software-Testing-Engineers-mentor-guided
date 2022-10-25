@@ -25,9 +25,9 @@ const sendRequest = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
   const json = await res.json();
 
-  const jsonId = json.filter(id => id.id < 20);
+  const filteredJson = json.filter(user => user.id < 20);
 
-  await fs.writeFile('./respons.json', JSON.stringify(jsonId, null, 2), err => {
+  await fs.writeFile('./tasks/module-8/response.json', JSON.stringify(filteredJson, null, 2), err => {
     if (err) {
       console.log(err);
     }
