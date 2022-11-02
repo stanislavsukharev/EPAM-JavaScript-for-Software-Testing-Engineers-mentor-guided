@@ -22,6 +22,16 @@ const fs = require('fs/promises');
  */
 const sendRequest = async () => {
   //put your code here
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const json = await res.json();
+
+  const filteredJson = json.filter(user => user.id < 20);
+
+  await fs.writeFile('./tasks/module-8/response.json', JSON.stringify(filteredJson, null, 2), err => {
+    if (err) {
+      console.log(err);
+    }
+  });
 };
 
 module.exports = {

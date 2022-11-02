@@ -24,7 +24,21 @@
 const fs = require('fs/promises');
 
 const jsonParser = async () => {
-  //put your code here
+  const data = await fs.readFile('./tasks/module-8/utils/test.json', 'utf-8', async (err, data) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+
+  const parsed = JSON.parse(data);
+  const names = parsed.list.entries.map(el => {
+    return { docId: 'http://doc.epam.com/' + el.entry.name.slice(0, -5) };
+  });
+  await fs.writeFile('./tasks/module-8/parsed.json', JSON.stringify(names, null, 2), err => {
+    if (err) {
+      console.log(err);
+    }
+  });
 };
 
 module.exports = {

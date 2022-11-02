@@ -34,13 +34,19 @@
     "@types/node": "16.11.59",
     "@types/sinon": "10.0.13",
     "chai": "4.3.6",
+    "fs.promises": "^0.1.2",
     "husky": "8.0.1",
     "mocha": "10.0.0",
-    "node-fetch": "2.6.7",
     "prettier": "2.7.1",
     "sinon": "14.0.0"
   },
   "engines": {
     "node": ">=16"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "keywords": [],
+  "author": ""
 }
